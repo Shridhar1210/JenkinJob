@@ -5,5 +5,13 @@ pipeline {          //Jenkin file alway start with keyword pipeline
         { steps 
             {sh 'echo hi_jenkin'}
         }
+        stage ('Excucating Test')
+        {
+            steps {sh 'echo Now i am Executating the TEST'}
+        }
+        stage ('Deployment Step')
+        {
+            steps {sh 'echo Now I am Deploying the job'}
+        }
     }
 }
