@@ -1,0 +1,9 @@
+pipeline {          //Jenkin file alway start with keyword pipeline
+    agent any       //agent any means: Any available exexutor
+    stages{         //it contains all the stages
+        stage ('display hello') //Name of the stage
+        { steps 
+            {sh 'echo hi_jenkin'}
+        }
+    }
+}
